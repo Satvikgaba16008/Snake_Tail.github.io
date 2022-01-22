@@ -1,0 +1,88 @@
+@import url('https:/ /fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+  padding: 0;
+   margin: 0; 
+}
+
+.body {
+ 
+background-image: url( "../snakebg.jpg");
+min-height:  100vh;
+background-size: 100vw 100vh;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+h1 {
+
+font-family: 'Mochiy Pop P One', sans-serif;
+top:  300 px;
+font-size:  60px;
+left: 4px ;
+font-weight:  bold;
+position: absolute;
+display: flex;
+}
+
+
+#board
+{
+
+    background: magenta ;
+    height: 90vmin;
+    width: 92vmin;
+    border: 2px solid black ;
+    display: grid;
+    grid-template-columns: repeat(22,1fr);
+    grid-template-rows : repeat(22,1fr);
+}
+#scoreBox {
+position: absolute;
+top: 9px;
+right: 200px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: 'Dongle', sans-serif;
+}
+#hiscoreBox
+{
+  position: absolute;
+top: 53px;
+right: 94px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: 'Dongle', sans-serif;
+
+}
+
+.head {
+
+  background : linear-gradient(red , yellow );
+    border:  2 px solid #e452e4;
+    transform:  scale(1.02);
+    border-radius: 30px;
+}
+.snake {
+background-color:  rgb(245, 194, 29);
+
+border: .25 vmin  solid black ;
+border-radius: 30px;
+
+}
+.food {
+    
+  background:  linear-gradient(red, rgb(0, 0, 0) ); 
+   border: .25 vmin solid  black; 
+  border-radius: 30px;
+}
+    
+
+
+
+
